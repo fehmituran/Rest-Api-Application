@@ -44,7 +44,7 @@ npm install
 
 ## :computer: Built with
 
-- [nodejs-homework-template](https://github.com/oliverplay/nodejs-homework-template
+- [nodejs-homework-template](https://github.com/oliverplay/nodejs-homework-template)
 - [Node.Js](https://nodejs.org/en)
 - [Javascript](https://javascript.info/)
 
