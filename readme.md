@@ -1,4 +1,4 @@
-## GoIT Node.js Homework01 Express
+## GoIT Node.js Homework02 Express
 
 This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. Postman was used for this API
 
