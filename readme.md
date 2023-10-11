@@ -56,6 +56,7 @@ npm install
 - [morgan](https://www.npmjs.com/package/morgan)
 - [cors](https://www.npmjs.com/package/cors)
 - [joi](https://joi.dev/)
+- [uuid](https://www.npmjs.com/package/uuid)
 
 ## :writing_hand: Authors
 
