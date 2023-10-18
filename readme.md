@@ -8,7 +8,7 @@ This Rest API is a simple Web API. This API contains a full set of CRUD (Create,
 
 ------------------------------------------------------------------------------------------------
 ### @ GET /api/contacts/:id
-![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/getId.PNG)
+![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/getById.PNG)
 
 
 ------------------------------------------------------------------------------------------------
@@ -24,6 +24,11 @@ This Rest API is a simple Web API. This API contains a full set of CRUD (Create,
 ------------------------------------------------------------------------------------------------
 ### @ PUT /api/contacts/:id
 ![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/update.PNG)
+
+
+------------------------------------------------------------------------------------------------
+### @ PATCH /api/contacts/:contactId/favorite
+![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/patch.PNG)
 
 
 ## Installation
