@@ -3,37 +3,37 @@
 This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API
 
 ### MongoDb Database
-![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/mongodb.PNG)
+![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/mongodb.PNG)
 
 
 ------------------------------------------------------------------------------------------------
 ### @ GET /api/contacts
-![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/get.PNG)
+![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/get.PNG)
 
 
 ------------------------------------------------------------------------------------------------
 ### @ GET /api/contacts/:id
-![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/getById.PNG)
+![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/getById.PNG)
 
 
 ------------------------------------------------------------------------------------------------
 ### @ POST /api/contacts
-![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/post.PNG)
+![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/post.PNG)
 
 
 ------------------------------------------------------------------------------------------------
 ### @ DELETE /api/contacts/:id
-![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/delete.PNG)
+![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/delete.PNG)
 
 
 ------------------------------------------------------------------------------------------------
 ### @ PUT /api/contacts/:id
-![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/update.PNG)
+![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/update.PNG)
 
 
 ------------------------------------------------------------------------------------------------
 ### @ PATCH /api/contacts/:contactId/favorite
-![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/patch.PNG)
+![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/patch.PNG)
 
 
 ## Installation
