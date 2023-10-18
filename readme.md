@@ -2,6 +2,11 @@
 
 This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API
 
+### MongoDb Database
+![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/mongodb.PNG)
+
+
+------------------------------------------------------------------------------------------------
 ### @ GET /api/contacts
 ![GoIT-hw-02](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/get.PNG)
 
