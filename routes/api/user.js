@@ -10,9 +10,7 @@ router.post('/signup', ctrlUser.registration);
 router.post('/login', ctrlUser.login);
 router.post('/logout', userAuth.auth, ctrlUser.logout);
 router.get('/current', userAuth.auth, ctrlUser.current);
-
-
-
+router.patch('/', userAuth.auth, ctrlUser.updateSubscription)
 
 
 

@@ -49,12 +49,15 @@ const registration = async (req, res, next) => {
       message: "Internal Server Error",
       data: "Registration Failure",
     });
+    next(e)
   }
 };
 
 const login = async (req, res, next) => {
-  const { email, password, subscription } = req.body;
+  const { email, password } = req.body;
   const user = await User.findOne({ email });
+
+ 
 
   if (!user) {
     return res.status(404).json({
@@ -96,6 +99,8 @@ const login = async (req, res, next) => {
 
     user.token = token;
     await user.save();
+
+  
   } catch (err) {
     console.error(err);
     return res.status(400).json({
@@ -108,7 +113,6 @@ const login = async (req, res, next) => {
 
 const logout = async (req, res, next) => {
   try {
-
     const { user } = req;
     console.log(user)
     user.token = null;
@@ -140,9 +144,39 @@ const current = (req, res, next) => {
       }
 };
 
+const updateSubscription = async (req, res, next) => {
+  const { _id } = req.user;
+  const { subscription } = req.body;
+
+  try{
+   
+    const result = await User.findByIdAndUpdate(_id, { subscription }, { new: true });
+
+      if(result){
+          res.json({
+              status: "success",
+              code: 200,
+              data: {contact: result},
+          })
+      }else{
+          res.status(404).json({
+              status: 'error',
+              code: 404,
+              message: `not found contact ${id}`,
+              data: 'not found',
+          })
+      }
+  }
+  catch(e){
+      console.error(e);
+      next(e);
+  }
+}
+
 module.exports = {
   registration,
   login,
   logout,
   current,
+  updateSubscription,
 };

@@ -2,8 +2,14 @@ const Contact = require('./schema/contactSchema');
 
 
 //mongoose -> find()
-const getAllContacts = async() => {
-    return Contact.find();
+const getAllContacts = async (skip, limit, findOptions) => {
+
+    const contacts = Contact.find(findOptions)
+    .skip(skip)
+    .limit(limit);
+
+      return contacts;
+    
 };
 
 
@@ -13,8 +19,8 @@ const getContactById = id => {
 };
 
 //mongoose -> create(data)
-const createContact = ({ name, email, phone, favorite }) => {
-    return Contact.create({ name, email, phone, favorite });
+const createContact = ({ name, email, phone, favorite, owner }) => {
+    return Contact.create({ name, email, phone, favorite, owner });
 }
 
 //mongoose -> findByIdAndUpdate
@@ -28,7 +34,6 @@ const updateStatusContact = (id, body) => {
     { favorite: body }, 
     { new: true }
   );
-
 }
 
 //mongoose -> findByIdAndRemove
