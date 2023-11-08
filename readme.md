@@ -1,40 +1,34 @@
-## GoIT Node.js Homework03 MongoDb
+## GoIT Node.js Homework04 Authentication/Authorization
 
-This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API
+This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API, Add user authentication/authorization logic using JWT, pagination for the collection of contacts and filter contacts by favorite field
 
-### MongoDb Database
-![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/mongodb.PNG)
-
-
-------------------------------------------------------------------------------------------------
-### @ GET /api/contacts
-![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/get.PNG)
+### MongoDb Contact Table
+![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/contactTable.PNG)
 
 
 ------------------------------------------------------------------------------------------------
-### @ GET /api/contacts/:id
-![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/getById.PNG)
+### MongoDb User Table
+![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/userTable.PNG)
 
 
 ------------------------------------------------------------------------------------------------
-### @ POST /api/contacts
-![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/post.PNG)
-
-
-------------------------------------------------------------------------------------------------
-### @ DELETE /api/contacts/:id
-![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/delete.PNG)
-
+### @ GET /user/signup
+![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/addUser.PNG)
 
 ------------------------------------------------------------------------------------------------
-### @ PUT /api/contacts/:id
-![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/update.PNG)
 
+### @ GET /user/login
+![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/login.PNG)
 
 ------------------------------------------------------------------------------------------------
-### @ PATCH /api/contacts/:contactId/favorite
-![GoIT-hw-03](https://github.com/fehmituran/Rest-Api-Application/blob/hw03-mongodb/img/patch.PNG)
+### @ GET /api/contacts?limit=2&&page=1&&favorite=true
+![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/paginationFavorite.PNG)
 
+------------------------------------------------------------------------------------------------
+### @ GET /user/logout
+![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/logout.PNG)
+
+------------------------------------------------------------------------------------------------
 
 ## Installation
 
@@ -60,6 +54,7 @@ npm install
 - [MongoDB Atlas](https://www.mongodb.com/atlas/database)
 
 
+
 ## :computer: Npm Packages
 
 - [nodemon](https://nodemon.io/)
@@ -67,6 +62,9 @@ npm install
 - [morgan](https://www.npmjs.com/package/morgan)
 - [cors](https://www.npmjs.com/package/cors)
 - [joi](https://joi.dev/)
+- [JWT-jsonwebtoken](https://jwt.io/).
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [passport and passport-jwt](https://www.npmjs.com/package/passport)
 
 
 ## :writing_hand: Authors
