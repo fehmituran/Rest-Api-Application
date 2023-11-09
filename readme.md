@@ -1,32 +1,19 @@
 ## GoIT Node.js Homework04 Authentication/Authorization
 
-This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API, Add user authentication/authorization logic using JWT, pagination for the collection of contacts and filter contacts by favorite field
-
-### MongoDb Contact Table
-![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/contactTable.PNG)
+This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API, Add user authentication/authorization logic using JWT, pagination for the collection of contacts and filter contacts by favorite field. Added uploading user picture
 
 
-------------------------------------------------------------------------------------------------
 ### MongoDb User Table
-![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/userTable.PNG)
+![GoIT-hw-05](https://github.com/fehmituran/Rest-Api-Application/blob/hw05-avatars/public/img/userTable.PNG)
 
 
 ------------------------------------------------------------------------------------------------
-### @ GET /user/signup
-![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/addUser.PNG)
+### @ GET /users/avatars
+![GoIT-hw-05](https://github.com/fehmituran/Rest-Api-Application/blob/hw05-avatars/public/img/addAvatar.PNG)
 
 ------------------------------------------------------------------------------------------------
-
-### @ GET /user/login
-![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/login.PNG)
-
-------------------------------------------------------------------------------------------------
-### @ GET /api/contacts?limit=2&&page=1&&favorite=true
-![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/paginationFavorite.PNG)
-
-------------------------------------------------------------------------------------------------
-### @ GET /user/logout
-![GoIT-hw-04](https://github.com/fehmituran/Rest-Api-Application/blob/hw04-auth/img/logout.PNG)
+### @ GET /users/avatars
+![GoIT-hw-05](https://github.com/fehmituran/Rest-Api-Application/blob/hw05-avatars/public/img/avatarPicture.PNG)
 
 ------------------------------------------------------------------------------------------------
 
@@ -65,6 +52,9 @@ npm install
 - [JWT-jsonwebtoken](https://jwt.io/).
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 - [passport and passport-jwt](https://www.npmjs.com/package/passport)
+- [gravatar](https://gravatar.com/)
+- [multer](https://www.npmjs.com/package/multer)
+- [jimp](https://www.npmjs.com/package/jimp)
 
 
 ## :writing_hand: Authors

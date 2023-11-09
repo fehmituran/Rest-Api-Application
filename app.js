@@ -5,7 +5,6 @@ const logger = require('morgan')
 const cors = require('cors')
 const mongoose = require('mongoose');
 const path = require("path");
-//const upload = require("./middleware/uploadFile");
 const multer = require('multer')
 
 const contactsRouter = require('./routes/api/contacts');

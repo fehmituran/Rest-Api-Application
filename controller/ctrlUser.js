@@ -62,6 +62,7 @@ const registration = async (req, res, next) => {
   }
 };
 
+
 const login = async (req, res, next) => {
   const { email, password } = req.body;
   const user = await User.findOne({ email });
