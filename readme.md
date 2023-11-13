@@ -1,21 +1,24 @@
-## GoIT Node.js Homework04 Authentication/Authorization
-
-This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API, Add user authentication/authorization logic using JWT, pagination for the collection of contacts and filter contacts by favorite field. Added uploading user picture
+## GoIT Node.js Homework06 Send Verification Email
+This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API, Add user authentication/authorization logic using JWT, pagination for the collection of contacts and filter contacts by favorite field. Added uploading user picture, Added "Send Verification Email"
 
 
 ### MongoDb User Table
-![GoIT-hw-05](https://github.com/fehmituran/Rest-Api-Application/blob/hw05-avatars/public/img/userTable.PNG)
-
-
-------------------------------------------------------------------------------------------------
-### @ GET /users/avatars
-![GoIT-hw-05](https://github.com/fehmituran/Rest-Api-Application/blob/hw05-avatars/public/img/addAvatar.PNG)
+![GoIT-hw-06](https://github.com/fehmituran/Rest-Api-Application/blob/hw06-email/public/img/mongodb.PNG)
 
 ------------------------------------------------------------------------------------------------
-### @ GET /users/avatars
-![GoIT-hw-05](https://github.com/fehmituran/Rest-Api-Application/blob/hw05-avatars/public/img/avatarPicture.PNG)
+### Sent Verification Email
+![GoIT-hw-06](https://github.com/fehmituran/Rest-Api-Application/blob/hw06-email/public/img/email.PNG)
 
 ------------------------------------------------------------------------------------------------
+### GET /auth/verify/:verificationToken
+![GoIT-hw-06](https://github.com/fehmituran/Rest-Api-Application/blob/hw06-email/public/img/emailVerification.PNG)
+
+------------------------------------------------------------------------------------------------
+### @ POST /users/verify/
+![GoIT-hw-06](https://github.com/fehmituran/Rest-Api-Application/blob/hw06-email/public/img/reSendEmail.PNG)
+
+------------------------------------------------------------------------------------------------
+
 
 ## Installation
 
@@ -55,6 +58,7 @@ npm install
 - [gravatar](https://gravatar.com/)
 - [multer](https://www.npmjs.com/package/multer)
 - [jimp](https://www.npmjs.com/package/jimp)
+- [nodemailer](https://www.npmjs.com/package/nodemailer)
 
 
 ## :writing_hand: Authors
