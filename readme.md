@@ -1,4 +1,4 @@
-## GoIT Node.js Homework04 Authentication/Authorization
+## GoIT Node.js Homework05 Avatars
 
 This Rest API is a simple Web API. This API contains a full set of CRUD (Create, Read, Update, Delete) operations for our tasks. MongoDb and Postman was used for this API, Add user authentication/authorization logic using JWT, pagination for the collection of contacts and filter contacts by favorite field. Added uploading user picture
 
